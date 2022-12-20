@@ -1,0 +1,79 @@
+<div class="row text-center">
+    <div class="col-md-12 borderNone">
+      <div class="col-12 dp0">
+        <div class="col-12 form-group text-center">
+          <input
+            id="file-input"
+            multiple
+            type="file"
+            class="form-control upload"
+            name="images"
+            accept=".jpg,.jpeg,.gif,.png"
+            required
+            (change)="detectFiles($event)"
+            
+            placeholder="Property images"
+            style="display: none"
+          />
+
+          <label
+            for="file-input"
+            style="
+              background: #db0c0c;
+              padding: 10px;
+              font-size: 13px;
+              color: white;
+              border-radius: 3px;
+            "
+            ><i class="ti-camera"></i> Upload Photos</label
+          >
+        </div>
+        <div class="col-12 text-center">
+          <ul class="list-inline">
+            <li
+              *ngFor="let url of urls; let i = index"
+              style="
+                display: inline;
+                position: relative;
+                padding-right: 10px;
+              "
+            >
+              <img
+                [src]="url"
+                class="img-fluid"
+                alt="uploaded file"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  margin-bottom: 10px;
+                "
+              />
+              <a style="cursor: pointer"
+                title="Remove"
+                (click)="delete(i)"
+              >x</a>
+            </li>
+          </ul>
+        </div>
+        <span
+        
+          class="error-msg"
+        >
+          Please Upload Images
+        </span>
+        <div
+          class="col-12 form-group text-center"
+          style="color: red"
+        >
+
+
+          {{ imageErrorMsg }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div >
+  <img  *ngFor="let item of urls" [src]="item" class="rounded mb-3" width="180">
+<input type="file" multiple (change)="detectFiles($event)">
+<button  *ngFor="let item of urls; let i=index"   (click)="delete(item.id)" >remove</button>
+</div> -->

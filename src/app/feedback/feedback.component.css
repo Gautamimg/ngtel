@@ -1,0 +1,74 @@
+.modal-dialog {
+    max-width: 360px;
+}
+.validate-form{
+    position: relative;
+    padding: 15px;
+}
+.login100-form-title {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+button.close {
+    right: -10px;
+    top: -10px;
+}
+.contact-dealer-thanks{
+    padding: 20px;
+}
+.contact-dealer-thanks .thanks-msg{text-align: center;}
+.contact-dealer-thanks .thanks-msg .login100-form-title{
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.contact-dealer-thanks .thanks-msg span{
+    font-size: 14px;
+}
+.contact-dealer-thanks .thanks-msg img{
+    height: 120px;
+    margin-bottom: 20px;
+}
+#review .radiobtn {
+    width: 40%;
+}
+#review .review-field textarea {
+    padding: 8px 30px 0 55px;
+    height: 120px;
+    resize: none;
+}
+#review .review-field .symbol-input100 {
+    align-items: flex-start;
+    top: 11px;
+    bottom: auto;
+}
+#review .radiobtn p {
+    font-size: 12px;
+}
+#review .btn {
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 0 30px 0 55px;
+}
+.star-rating input {
+    display:none;
+}
+.star-rating label {
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-size: 26px;
+}
+.star-rating :checked ~ label {
+    color: #9f0303;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color:#db0c0c;
+}

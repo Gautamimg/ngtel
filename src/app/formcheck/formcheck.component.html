@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <div *ngFor="let data of Data">
+    <label>
+      <input type="checkbox" [value]="data.id" (change)="onCheckboxChange($event)" />
+      {{data.name}}
+    </label>
+  </div>
+  <p class="error" *ngIf="this.form.controls['checkArray'].errors?.['required']">
+    Checkbox is required, select atleast one value.
+  </p>
+  
+  <input [disabled]="!this.form.valid" type="submit" value="Submit">
+
+</form>

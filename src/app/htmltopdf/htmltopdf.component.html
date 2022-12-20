@@ -1,0 +1,42 @@
+<h2>Angular HTML To PDF Generator Example - ItSolutionStuff.com</h2>
+<div class="container" id="section">
+    <div id="pdfTable" #pdfTable>
+
+        <table class="table table-bordered" id="print_table">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hardik</td>
+                    <td>Savani</td>
+                    <td>itsolutionstuff.com</td>
+                </tr>
+                <tr>
+                    <td>Vimal</td>
+                    <td>Kashiyani</td>
+                    <td>hdtuto.com</td>
+                </tr>
+                <tr>
+                    <td>Harshad</td>
+                    <td>Pathak</td>
+                    <td>nicesnippets.com</td>
+                </tr>
+                <tr>
+                    <td>Harsh</td>
+                    <td>Pathan</td>
+                    <td>nicesnippets.in</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="btn btn-primary" (click)="downloadAsPDF()">Export To PDF</button>
+    <button class="btn btn-primary" [useExistingCss]="true" printSectionId="pdfTable" ngxPrint>print</button>
+
+    <a href="mailto:gautam12.img@gmail.com? &subject=this is how to use the mailto link &body=this is the mail from">dfgv
+    </a>
+</div>

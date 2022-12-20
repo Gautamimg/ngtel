@@ -1,0 +1,1535 @@
+<div class="container-fluid paddEqual userProfileBg mp30">
+  <div class="container mp0">
+    <div class="row">
+      <div
+        class="col-md-12 col-12 list-property-div"
+        style="position: relative"
+      >
+        <div class="row justify-content-center">
+          <!--Personal details-->
+          <div class="col-md-10 col-12 usersformms">
+            <div class="col-md-12 col-12 usersHeader">
+              <h4 class="card-title font-weight-bold">
+                Post Your Property Here
+              </h4>
+            </div>
+            <div class="list-property-div">
+              <form name="startForm">
+                <div class="col-md-12 col-12 brokerBasic">
+                  <div class="row">
+                    <div class="col-md-7 col-12 mp0">
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label
+                            >Select Your Purpose
+                            <span class="required">*</span></label
+                          >
+                          <ul class="flex-new">
+                            <li>
+                              <label for="Owner" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Owner"
+                                  formControlName="property_type"
+                                  value="2"
+                                  required
+                                />
+                                <span class="iam round">Sale</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="Agent" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Agent"
+                                  formControlName="property_type"
+                                  value="1"
+                                  required
+                                />
+                                <span class="iam round">Rent</span>
+                              </label>
+                            </li>
+                            <li class="width1">
+                              <label for="Builder1" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Builder1"
+                                  formControlName="property_type"
+                                  required
+                                  value="3"
+                                />
+                                <span class="iam round">Paying Guest (PG)</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg"> Choose property type </span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label
+                            >Available Category
+                            <span class="required">*</span></label
+                          >
+                          <ul class="flex-new">
+                            <li>
+                              <label for="professionals" class="switch">
+                                <input
+                                  type="radio"
+                                  id="professionals"
+                                  formControlName="available_category"
+                                  required
+                                  value="1"
+                                />
+                                <span class="iam round">For Professionals</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="students" class="switch">
+                                <input
+                                  type="radio"
+                                  id="students"
+                                  formControlName="available_category"
+                                  required
+                                  value="2"
+                                />
+                                <span class="iam round">For Students</span>
+                              </label>
+                            </li>
+                            <li class="width1">
+                              <label
+                                for="professionals-students"
+                                class="switch"
+                              >
+                                <input
+                                  type="radio"
+                                  id="professionals-students"
+                                  formControlName="available_category"
+                                  required
+                                  value="3"
+                                />
+                                <span class="iam round"
+                                  >For Professionals and Students</span
+                                >
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg">
+                            Choose Available category
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label
+                            >Available For<span class="required">*</span></label
+                          >
+                          <ul class="flex-new">
+                            <li>
+                              <label for="male" class="switch">
+                                <input
+                                  type="radio"
+                                  id="male"
+                                  formControlName="gender"
+                                  required
+                                  value="1"
+                                />
+                                <span class="iam round">Male</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="female" class="switch">
+                                <input
+                                  type="radio"
+                                  id="female"
+                                  formControlName="gender"
+                                  required
+                                  value="2"
+                                />
+                                <span class="iam round">Female</span>
+                              </label>
+                            </li>
+                            <li class="width1">
+                              <label for="unisex" class="switch">
+                                <input
+                                  type="radio"
+                                  id="unisex"
+                                  formControlName="gender"
+                                  required
+                                  value="3"
+                                />
+                                <span class="iam round">Unisex</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg"> Choose Gender </span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label>Rooms <span class="required">*</span></label>
+                          <ul class="flex-new">
+                            <li>
+                              <label for="Private" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Private"
+                                  formControlName="room_type"
+                                  required
+                                  value="1"
+                                />
+                                <span class="iam round">Private</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="Sharing" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Sharing"
+                                  formControlName="room_type"
+                                  required
+                                  value="2"
+                                />
+                                <span class="iam round">Sharing</span>
+                              </label>
+                            </li>
+                            <li class="width1">
+                              <label for="both" class="switch">
+                                <input
+                                  type="radio"
+                                  id="both"
+                                  formControlName="room_type"
+                                  required
+                                  value="3"
+                                />
+                                <span class="iam round">Both</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg"> Choose Room type </span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label>Food <span class="required">*</span></label>
+                          <ul class="flex-new">
+                            <li>
+                              <label for="Available" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Available"
+                                  formControlName="food_option"
+                                  required
+                                  value="1"
+                                />
+                                <span class="iam round">Available</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="notavail" class="switch">
+                                <input
+                                  type="radio"
+                                  id="notavail"
+                                  formControlName="food_option"
+                                  required
+                                  value="2"
+                                />
+                                <span class="iam round">Not Available</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg"> Choose Food Option </span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label
+                            >Food Type <span class="required">*</span></label
+                          >
+                          <ul class="flex-new">
+                            <li>
+                              <label for="veg" class="switch">
+                                <input
+                                  type="radio"
+                                  id="veg"
+                                  formControlName="food_type"
+                                  required
+                                  value="1"
+                                />
+                                <span class="iam round">Vegetarian</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="nonveg" class="switch">
+                                <input
+                                  type="radio"
+                                  id="nonveg"
+                                  formControlName="food_type"
+                                  required
+                                  value="2"
+                                />
+                                <span class="iam round">Non Vegetarian</span>
+                              </label>
+                            </li>
+                            <li class="width1">
+                              <label for="foodboth" class="switch">
+                                <input
+                                  type="radio"
+                                  id="foodboth"
+                                  formControlName="food_type"
+                                  required
+                                  value="3"
+                                />
+                                <span class="iam round">Both</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg"> Choose Food Type </span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label
+                            >Select Type of Your Property
+                            <span class="required">*</span></label
+                          >
+                          <ul class="flex-new">
+                            <li>
+                              <label for="Residential" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Residential"
+                                  formControlName="looking_type"
+                                  required
+                                  value="1"
+                                />
+                                <span class="iam round">Residential</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="Commercial" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Commercial"
+                                  formControlName="looking_type"
+                                  required
+                                  value="2"
+                                />
+                                <span class="iam round">Commercial</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="Agriculture" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Agriculture"
+                                  formControlName="looking_type"
+                                  required
+                                  value="3"
+                                />
+                                <span class="iam round">Agriculture</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="Industrial" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Industrial"
+                                  formControlName="looking_type"
+                                  required
+                                  value="4"
+                                />
+                                <span class="iam round">Industrial</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg"> Choose looking type </span>
+                          <!--Resendtial subcategory-->
+                          <ul class="flex-new">
+                            <label
+                              >Property Type
+                              <span class="required">*</span></label
+                            >
+                            <li>
+                              <label for="resendtial_flat" class="switch">
+                                <input
+                                  type="radio"
+                                  id="resendtial_flat"
+                                  formControlName="looking_subcat_type"
+                                  value="1"
+                                />
+                                <span class="iam round"
+                                  >Apartment/Flat /Builder Floor</span
+                                >
+                              </label>
+                            </li>
+                            <li>
+                              <label for="independent_house" class="switch">
+                                <input
+                                  type="radio"
+                                  id="independent_house"
+                                  formControlName="looking_subcat_type"
+                                  value="2"
+                                />
+                                <span class="iam round">Independent House</span>
+                              </label>
+                            </li>
+                            <li class="width1">
+                              <label for="resi_plot_land" class="switch">
+                                <input
+                                  type="radio"
+                                  id="resi_plot_land"
+                                  formControlName="looking_subcat_type"
+                                  value="4"
+                                />
+                                <span class="iam round">Plot/Land</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <!--Commercial subcategory-->
+                          <ul \ class="flex-new">
+                            <label
+                              >Property Type
+                              <span class="required">*</span></label
+                            >
+                            <li>
+                              <label for="shops_showroom" class="switch">
+                                <input
+                                  type="radio"
+                                  id="shops_showroom"
+                                  formControlName="looking_subcat_type"
+                                  value="5"
+                                />
+                                <span class="iam round">Shops/Showroom</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="office_space" class="switch">
+                                <input
+                                  type="radio"
+                                  id="office_space"
+                                  formControlName="looking_subcat_type"
+                                  value="6"
+                                />
+                                <span class="iam round">Office/Space</span>
+                              </label>
+                            </li>
+                            <li class="width1">
+                              <label for="commecrial_plotland" class="switch">
+                                <input
+                                  type="radio"
+                                  id="commecrial_plotland"
+                                  formControlName="looking_subcat_type"
+                                  value="7"
+                                />
+                                <span class="iam round">Plot/Land</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <!--Agriculture subcategory-->
+                          <ul class="flex-new">
+                            <label
+                              >Property Type
+                              <span class="required">*</span></label
+                            >
+                            <li>
+                              <label for="agricultural_land" class="switch">
+                                <input
+                                  type="radio"
+                                  id="agricultural_land"
+                                  formControlName="looking_subcat_type"
+                                  value="8"
+                                />
+                                <span class="iam round">Agricultural Land</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="agri_farmhouse" class="switch">
+                                <input
+                                  type="radio"
+                                  id="agri_farmhouse"
+                                  formControlName="looking_subcat_type"
+                                  value="9"
+                                />
+                                <span class="iam round">Farmhouse</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <!--Industry subcategory-->
+                          <ul class="flex-new">
+                            <label
+                              >Property Type
+                              <span class="required">*</span></label
+                            >
+                            <li>
+                              <label for="agri_plotland" class="switch">
+                                <input
+                                  type="radio"
+                                  id="agri_plotland"
+                                  formControlName="looking_subcat_type"
+                                  value="10"
+                                />
+                                <span class="iam round">Plot/Land</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="agri_facatory" class="switch">
+                                <input
+                                  type="radio"
+                                  id="agri_facatory"
+                                  formControlName="looking_subcat_type"
+                                  value="13"
+                                />
+                                <span class="iam round">Factory</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label
+                            >Property Sub-Category
+                            <span class="required">*</span></label
+                          >
+                          <ul class="flex-new">
+                            <li class="">
+                              <label for="flat" class="switch">
+                                <input
+                                  id="flat"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="1"
+                                />
+                                <span class="iam round">Flat</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="apt" class="switch">
+                                <input
+                                  id="apt"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="2"
+                                />
+                                <span class="iam round">Apartment</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="inf" class="switch">
+                                <input
+                                  id="inf"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="3"
+                                />
+                                <span class="iam round">Independent Floor</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="studio" class="switch">
+                                <input
+                                  id="studio"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="4"
+                                />
+                                <span class="iam round">Studio</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="sa" class="switch">
+                                <input
+                                  id="sa"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="5"
+                                />
+                                <span class="iam round">Service Apartment</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="pent" class="switch">
+                                <input
+                                  id="pent"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="6"
+                                />
+                                <span class="iam round">Penthouse</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="ih" class="switch">
+                                <input
+                                  id="ih"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="7"
+                                />
+                                <span class="iam round">Independent House</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="vila" class="switch">
+                                <input
+                                  id="vila"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="8"
+                                />
+                                <span class="iam round">Vila</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="shop" class="switch">
+                                <input
+                                  id="shop"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="9"
+                                />
+                                <span class="iam round">Shop</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="showroom" class="switch">
+                                <input
+                                  id="showroom"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="10"
+                                /><span class="iam round">Showroom</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="office" class="switch">
+                                <input
+                                  id="office"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="11"
+                                /><span class="iam round">Office</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="space" class="switch">
+                                <input
+                                  id="space"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="12"
+                                /><span class="iam round">Space</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="plot" class="switch">
+                                <input
+                                  id="plot"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="13"
+                                /><span class="iam round">Plot</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="land" class="switch">
+                                <input
+                                  id="land"
+                                  type="radio"
+                                  formControlName="looking_subcat_type_value"
+                                  value="14"
+                                /><span class="iam round">Land</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg">
+                            Please select Property Type
+                          </span>
+                        </div>
+                      </div>
+                      <!-- Property Location -->
+                      <div
+                        class="col-md-12 col-12 pd-0 form-group position-relative"
+                      >
+                        <label
+                          >Property Location
+                          <span class="required">*</span>
+                        </label>
+                        <div class="d-flex justify-class">
+                          <div class="col-md-4 col-5 pd-0 form-group">
+                            <span class="propertyMsg"></span>
+                            <label>State <span class="required">*</span></label>
+                            <select class="form-control state">
+                              <option>Rajasthan</option>
+                            </select>
+                            <!-- <div *ngIf="state_id.invalid && locationError"
+                                                              class="fieldErrorMsg">
+                                                              <p *ngIf="state_id.errors.required">Please select state</p>
+                                                          </div> -->
+                          </div>
+                          <div
+                            class="col-md-4 col-5 pd-0 form-group offset-md-2"
+                          >
+                            <label>City <span class="required">*</span></label>
+                            <select class="form-control" id="city_name">
+                              <option>Alwar</option>
+                              <option>Jaipur</option>
+                            </select>
+                            <!-- <div *ngIf="city_id.invalid && locationError"
+                                                              class="fieldErrorMsg">
+                                                              <p *ngIf="city_id.errors.required">Please select City</p>
+                                                          </div> -->
+                          </div>
+                        </div>
+                        <input
+                          ngx-google-places-autocomplete
+                          value=""
+                          placeholder="Enter Property Location *"
+                          style="padding-left: 20px"
+                          class="form-control"
+                          id="form-location"
+                        />
+                        <span class="symbol-input100" style="top: 122px">
+                          <i
+                            class="ti-location-pin"
+                            style="font-weight: 700"
+                            aria-hidden="true"
+                          ></i>
+                        </span>
+                        <span class="error-msg"> Please Enter Location </span>
+                      </div>
+
+                      <!-- Property Details -->
+                      <div class="row pd-0 form-group">
+                        <div class="col-md-12">
+                          <label
+                            >Property Details
+                            <span class="required">*</span></label
+                          >
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder=" Enter Number of BHK *"
+                            type="tel"
+                            required
+                            formControlName="no_of_bhk"
+                            min="1"
+                          />
+                          <span class="error-msg">
+                            Please Enter Number of BHK
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder=" Enter Number of Rooms *"
+                            type="tel"
+                            required
+                            formControlName="no_of_rooms"
+                            min="1"
+                          />
+                          <span class="error-msg">
+                            Please Enter Number of Rooms
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder=" Enter Number of Kitchen *"
+                            type="tel"
+                            required
+                            formControlName="kitchen"
+                            min="1"
+                          />
+                          <span class="error-msg">
+                            Please Enter Number of kitchen
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder=" Enter Number of bathroom *"
+                            type="tel"
+                            required
+                            formControlName="baathroom"
+                            min="1"
+                          />
+                          <span class="error-msg">
+                            Please Enter Number of Bathroom
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder="Enter Area *"
+                            type="tel"
+                            required
+                            formControlName="area"
+                          />
+                          <select
+                            class="form-group"
+                            formControlName="area_unit"
+                            style="
+                              position: absolute;
+                              right: 11px;
+                              top: 29%;
+                              font-size: 13px;
+                            "
+                          >
+                            <option value="" disabled selected>Select</option>
+                            <option>Sq. Ft.</option>
+                            <option>Sq. Yd.</option>
+                            <option>Sq. Mtr.</option>
+                            <option>Ares</option>
+                            <option>Biswa</option>
+                            <option>Bigha</option>
+                            <option>Acre</option>
+                            <option>Hectare</option>
+                          </select>
+                          <span class="error-msg"> Please Enter Area </span>
+                          <span class="error-msg"> Please Enter Area Unit</span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder="Enter Super Area *"
+                            required
+                            formControlName="super_area"
+                            type="tel"
+                          />
+                          <select
+                            class="form-group"
+                            name="superarea_unit"
+                            style="
+                              position: absolute;
+                              right: 14px;
+                              top: 26%;
+                              font-size: 13px;
+                            "
+                            formControlName="superarea_unit"
+                          >
+                            <option value="" selected disabled>Select</option>
+                            <option value="2">Sq. Ft.</option>
+                          </select>
+                          <span class="error-msg">
+                            Please Enter super area
+                          </span>
+                          <span class="error-msg">
+                            <p>Carpet Area Must Be Less Than To Super Area.</p>
+                          </span>
+                          <span class="error-msg">
+                            Please Select Super Area Unit.</span
+                          >
+                        </div>
+
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder="Enter Carpet Area *"
+                            required
+                            formControlName="carpet_area"
+                            type="tel"
+                            min="1"
+                          />
+                          <span
+                            class="input-group-text"
+                            style="
+                              position: absolute;
+                              bottom: 9px;
+                              right: 16px;
+                              border: 1px solid #ced4da;
+                              border-radius: 0;
+                              padding: 3px 9px;
+                              font-size: 14px;
+                              background: #e8ebef;
+                            "
+                          >
+                            <span>Sq. Ft.</span>
+                          </span>
+                          <span class="error-msg">
+                            Please Enter carpet area
+                          </span>
+                          <span class="error-msg">
+                            <p>Carpet Area Must Be Less Than To Super Area.</p>
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <select
+                            class="form-control"
+                            required
+                            formControlName="whichpart_torent"
+                          >
+                            <option value="" disabled>
+                              Which part to rent *
+                            </option>
+                            <option value="1">Complete Property</option>
+                            <option value="2">Sum Part of Property</option>
+                          </select>
+                          <span class="error-msg">
+                            Choose which part to rent
+                          </span>
+                        </div>
+
+                        <div class="col-md-6 col-12 form-group">
+                          <select
+                            class="form-control"
+                            required
+                            formControlName="noof_floors"
+                          >
+                            <option value="" disabled selected>
+                              Total No of Floor
+                            </option>
+                            <option value="0">Ground</option>
+                            <option
+                              *ngFor="
+                                let item of [].constructor(39);
+                                let i = index
+                              "
+                              value="{{ i + 1 }}"
+                            >
+                              {{ i + 1 }}
+                            </option>
+                            <option value="40+">40+</option>
+                          </select>
+                          <span class="error-msg">
+                            Choose total no of floor
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <select
+                            class="form-control"
+                            required
+                            formControlName="floor_torent"
+                          >
+                            <option value="" disabled selected>
+                              Floor to Rent
+                            </option>
+                            <option value="-1">Basement</option>
+                            <option value="0">Ground</option>
+                            <option></option>
+                          </select>
+                          <span class="error-msg"> Choose floor to rent </span>
+                        </div>
+
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder=" Enter Number of Office *"
+                            type="tel"
+                            required
+                            formControlName="office"
+                            min="1"
+                          />
+                          <span class="error-msg">
+                            Please Enter Number of Office
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <select
+                            class="form-control"
+                            formControlName="constructed_floor"
+                          >
+                            <option value="" disabled>
+                              Select Constructed Floor *
+                            </option>
+                            <option value="0">Ground</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                          </select>
+                          <span class="error-msg">
+                            Please Enter Constructed Floor
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <select
+                            class="form-control"
+                            required
+                            formControlName="facing"
+                          >
+                            <option value="" disabled>Select facing *</option>
+                            <option value="1">East</option>
+                            <option value="2">West</option>
+                            <option value="3">North</option>
+                            <option value="4">South</option>
+                            <option value="5">South-East</option>
+                            <option value="6">South-West</option>
+                            <option value="7">North-East</option>
+                            <option value="8">North-West</option>
+                            <option value="9">East-North</option>
+                            <option value="10">East-South</option>
+                            <option value="11">West-North</option>
+                            <option value="12">West-South</option>
+                          </select>
+                          <span class="error-msg"> Choose Facing </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder="Enter width of facing road *"
+                            min="1"
+                            required
+                            formControlName="width_of_facing_road"
+                            type="tel"
+                          />
+                          <span
+                            class="input-group-text"
+                            style="
+                              position: absolute;
+                              right: 15px;
+                              top: 7px;
+                              border: 1px solid #ced4da;
+                              border-radius: 0;
+                              padding: 3px 9px;
+                              font-size: 14px;
+                              background: #e8ebef;
+                            "
+                            >Foot</span
+                          >
+                          <span class="error-msg">
+                            Please Enter Width of Facing Road
+                          </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <select
+                            class="form-control"
+                            required
+                            formControlName="ownership_by"
+                          >
+                            <option value="" disabled>Ownership By *</option>
+                            <option value="1">Agreement</option>
+                            <option value="2">Registry</option>
+                            <option value="3">Socity Patta</option>
+                            <option value="4">Agriculture Patta</option>
+                            <option value="5">
+                              UIT (Urban Improvement Trust)
+                            </option>
+                            <option value="6">
+                              RHB (Rajasthan Housing Board)
+                            </option>
+                            <option value="7">RIICO</option>
+                            <option value="8">Registry by Builder</option>
+                            <option value="9">Other</option>
+                          </select>
+                          <span class="error-msg"> Choose Ownership type </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <!-- <label> Boundary <span class="required">*</span></label> -->
+                          <div class="col-md-12 toggle-radio">
+                            Select Boundary<label class="switch">
+                              <input
+                                type="checkbox"
+                                name="boundary"
+                                formControlName="boundary"
+                              />
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                          <!-- <span class="error-msg" *ngIf="
+                                                  quickpostingValid &&
+                                                  quickpostingControl.boundary.errors
+                                                  ">
+                                                          Please Enter Boundary
+                                                      </span> -->
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <input
+                            class="form-control"
+                            placeholder="Enter shade *"
+                            required
+                            formControlName="shade"
+                            type="tel"
+                          />
+                          <span
+                            class="input-group-text"
+                            style="
+                              position: absolute;
+                              right: 15px;
+                              top: 7px;
+                              border: 1px solid #ced4da;
+                              border-radius: 0;
+                              padding: 3px 9px;
+                              font-size: 14px;
+                              background: #e8ebef;
+                            "
+                            >Sq. Ft.</span
+                          >
+                          <span class="error-msg"> Please Enter shade </span>
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <!-- <label>Price <span class="required">*</span></label> -->
+
+                          <input
+                            class="form-control new-rs"
+                            placeholder="Enter Property Price *"
+                            type="tel"
+                            style="padding-left: 20px"
+                            required
+                            formControlName="price"
+                            min="1"
+                          />
+                          <span
+                            class="symbol-input100 new-rschild"
+                            style="
+                              top: 11px;
+                              left: 17px;
+                              font-size: 14px;
+                              font-weight: 700;
+                            "
+                            >₹</span
+                          >
+
+                          <span class="error-msg"> Please Enter Price </span>
+                        </div>
+                        <div class="col-md-12 col-12">
+                          <label
+                            >Amt in words : &nbsp;<span
+                              class="expected-price"
+                              
+                              >No words</span
+                            ></label
+                          >
+                        </div>
+                        <div class="col-md-6 col-12 form-group">
+                          <!-- <label>Price <span class="required">*</span></label> -->
+
+                          <input
+                            class="form-control"
+                            placeholder="Enter Monthly Expected Rent *"
+                            type="tel"
+                            style="padding-left: 20px"
+                            required
+                            formControlName="price"
+                            min="1"
+                          />
+                          <span
+                            class="symbol-input100"
+                            style="
+                              top: 10px;
+                              left: 17px;
+                              font-size: 14px;
+                              font-weight: 700;
+                            "
+                            >₹</span
+                          >
+
+                          <span class="error-msg">
+                            Please Enter Monthly Expected Rent
+                          </span>
+                        </div>
+                        <div class="col-md-12 col-12">
+                          <label
+                            >Amt in words : &nbsp;<span
+                              class="expected-price"
+                              
+                              >No words</span
+                            ></label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div
+                          class="row owner-type"
+                          style="margin: 0; position: relative"
+                        >
+                          <label>I am <span class="required">*</span></label>
+                          <ul class="flex-new">
+                            <li>
+                              <label for="anOwner" class="switch">
+                                <input
+                                  type="radio"
+                                  id="anOwner"
+                                  formControlName="you_are"
+                                  required
+                                  value="2"
+                                />
+                                <span class="iam round">An Owner</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="Broker" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Broker"
+                                  formControlName="you_are"
+                                  required
+                                  value="1"
+                                />
+                                <span class="iam round">A Broker</span>
+                              </label>
+                            </li>
+                            <li class="width1">
+                              <label for="Builder2" class="switch">
+                                <input
+                                  type="radio"
+                                  id="Builder2"
+                                  formControlName="you_are"
+                                  required
+                                  value="3"
+                                />
+                                <span class="iam round"
+                                  >Friend and Relative</span
+                                >
+                              </label>
+                            </li>
+                          </ul>
+                          <span class="error-msg"> Choose you are </span>
+                          <input
+                            type="text"
+                            placeholder="Enter full name *"
+                            class="form-control"
+                            formControlName="name"
+                            required
+                          />
+                          <span class="error-msg">
+                            <p class="error">Enter full name</p>
+                            <p class="error">Enter valid Name</p>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-d">
+                        <div class="col-md-5 col-12 pd-0 form-group">
+                          <input
+                            type="email"
+                            placeholder="Enter email-id *"
+                            class="form-control"
+                            required
+                            formControlName="email_id"
+                            style="padding-left: 20px"
+                          />
+
+                          <span
+                            class="symbol-input100 new-ma"
+                            style="font-size: 11px; left: -2px; top: 15px"
+                          >
+                            <i
+                              class="ti-email"
+                              style="font-weight: 700"
+                              aria-hidden="true"
+                            ></i>
+                          </span>
+
+                          <span class="error-msg">
+                            <p class="error">Enter email id</p>
+                            <p
+                              class="error"
+                            
+                            >
+                              Enter valid email id
+                            </p>
+                          </span>
+                        </div>
+                        <div
+                          class="col-md-6 col-12 pd-0 form-group offset-md-1"
+                          
+                        >
+                          <!-- <label>Mobile Number <span class="required">*</span></label> -->
+                          <input
+                            type="tel"
+                            maxlength="10"
+                            placeholder="Enter mobile number *"
+                            class="form-control"
+                            style="padding-left: 35px"
+                            required
+                            formControlName="mobile"
+                            pattern="^\d{10}$"
+                            autocomplete="off"
+                            onkeypress="return /[0-9 ]/i.test(event.key)"
+                            pattern="^\d{10}$"
+                          />
+                          <span class="symbol-input100" style="font-weight: 700"
+                            >+91</span
+                          >
+                          <span
+                            class="error-msg"
+                           
+                          >
+                            <p
+                              class="error"
+                              
+                            >
+                              Enter mobile number
+                            </p>
+                            <p
+                              class="error"
+                              
+                            >
+                              Enter valid mobile number
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row text-center">
+                        <div class="col-md-12 borderNone">
+                          <div class="col-12 dp0">
+                            <div class="col-12 form-group text-center">
+                              <input
+                                id="file-input"
+                                multiple
+                                type="file"
+                                class="form-control upload"
+                                name="images"
+                                accept=".jpg,.jpeg,.gif,.png"
+                                required
+                                
+                                formControlName="file"
+                                placeholder="Property images"
+                                style="display: none"
+                              />
+
+                              <label
+                                for="file-input"
+                                style="
+                                  background: #db0c0c;
+                                  padding: 10px;
+                                  font-size: 13px;
+                                  color: white;
+                                  border-radius: 3px;
+                                "
+                                ><i class="ti-camera"></i> Upload Photos</label
+                              >
+                            </div>
+                            <div class="col-12 text-center">
+                              <ul class="list-inline">
+                                <li
+                                  
+                                  style="
+                                    display: inline;
+                                    position: relative;
+                                    padding-right: 10px;
+                                  "
+                                >
+                                  <img
+                                    
+                                    class="img-fluid"
+                                    alt="uploaded file"
+                                    style="
+                                      width: 100px;
+                                      height: 100px;
+                                      margin-bottom: 10px;
+                                    "
+                                  />
+                                  <i
+                                    class="ti-close icon-close"
+                                    style="cursor: pointer"
+                                    title="Remove"
+                                    
+                                  ></i>
+                                </li>
+                              </ul>
+                            </div>
+                            <span
+                             
+                              class="error-msg"
+                            >
+                              Please Upload Images
+                            </span>
+                            <div
+                              class="col-12 form-group text-center"
+                              style="color: red"
+                            >
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 col-12 pd-0 form-group">
+                        <div class="container-login100-form-btn">
+                          <button
+                            class="login100-form-btn"
+                            
+                            type="submit"
+                          >
+                            Submit Your Property
+                            <div class="box" >
+                              <div class="loader-13"></div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-12 mp0 free-img-box">
+                      <div class="col-md-12 col-12 pd-0">
+                        <img
+                          src="assets/images/person-3.png"
+                          class="img-fluid"
+                          alt="add property"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--OTP verify form if user is not login -->
+<div class="modal fade postOTPVerify" id="postOtpVerify">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form
+        class="validate-form"
+        name="verifyotp"
+        id="verifyOtp"
+        method="post"
+        style="position: relative"
+      >
+        <div class="loader">
+          <img
+            class="img-fluid"
+            src="assets/images/loader.gif"
+            alt="loader image"
+          />
+        </div>
+        <span class="login100-form-title">Verify</span>
+        <span ></span>
+        <div class="wrap-input100" >
+          <label class="text-center" style="margin-right: 0"
+            >OTP has been sent to your mobile XXXXXX, please enter same here to verify.</label
+          >
+        </div>
+        <div class="row otpVerify" style="margin: 0">
+          <div class="wrap-input100 col-md-4 col-4" style="padding: 0">
+            <input
+              class="input100 change otptext"
+              type="tel"
+              name="pass1"
+              maxlength="1"
+              size="1"
+              required
+              id="pass1"
+            />
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100 col-md-4 col-4" style="padding: 0">
+            <input
+              class="input100 change otptext"
+              type="tel"
+              name="pass2"
+              maxlength="1"
+              size="1"
+              required
+              id="pass2"
+            />
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100 col-md-4 col-4" style="padding: 0">
+            <input
+              class="input100 change otptext"
+              type="tel"
+              name="pass3"
+              maxlength="1"
+              size="1"
+              required
+              id="pass3"
+            />
+            <span class="focus-input100"></span>
+          </div>
+        </div>
+        <p
+          class="one_time_password text-danger"
+          style="
+            cursor: pointer;
+            margin: 0px;
+            margin-top: -5px;
+            font-size: 12px;
+            float: right;
+          "
+          
+        >
+          RESEND (OTP)
+        </p>
+        <div class="container-login100-form-btn">
+          <button
+            class="login100-form-btn"
+            type="button"
+         
+          >
+            Verify & Submit
+            <div class="box" >
+              <div class="loader-13"></div>
+            </div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--Thankyou Form-->
+
+<div class="container-fluid userProfileBg" >
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 usersformms">
+        <div class="tab-content list-property-div">
+          <div id="info" class="tab-pane active">
+            <br />
+            <div class="col-12 text-center brokerBasic new-pad">
+              <div class="data-parent">
+                <img
+                  src="assets/images/thanks-image.png"
+                  alt="broker"
+                  class="img-fluid"
+                />
+              </div>
+              <h5
+             
+                style="
+                  font-weight: bold;
+                  max-width: 60%;
+                  margin: 15px auto;
+                  line-height: 25px;
+                "
+              ></h5>
+              <div class="col-12 text-center nav" style="display: inline-block">
+                <button
+                  class="btn btn-danger"
+                 
+                  data-toggle="pill"
+                  href="#info"
+                >
+                  Add New Property
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

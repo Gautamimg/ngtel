@@ -1,0 +1,28 @@
+<form #simpleForm="ngForm" (ngSubmit)="getval(simpleForm.value)" >
+<div style="margin-left:500px;" >
+  <h1>Login</h1>
+<input type="text" name="email_mobile" [(ngModel)]="email" placeholder="Enter your phone number/email" /><br><br>
+<input type="password" name="password"  ngModel placeholder=" enter your password" /><br><br>
+<p (click)="getotp()" style="cursor:pointer;" >Click here for Get otp</p><br><br>
+<button type="submit"  [disabled]="simpleForm.invalid">Submit</button>
+<p style="margin-top:30px; cursor:pointer " (click)="forgot_password()" >Forgot password</p>
+</div>
+</form>
+<div class="otp" style="text-align:center;">
+  <form >
+  <ng-otp-input #task  [config]="{length:3}"></ng-otp-input>
+  <button type="submit" (click)="submit_otp(task)" >submit</button>
+</form>
+</div>
+
+
+
+<form #simple="ngForm" (ngSubmit)="submit_newpsw(simple.value)" >
+  <div style="margin-left:500px;" >
+    <h1>Change password</h1>
+  <input type="text" name="password" ngModel placeholder="password" /><br><br>
+  <input type="password" name="confirm_password"  ngModel placeholder=" confirm password" /><br><br>
+  <button type="submit"  [disabled]="simple.invalid">Submit</button>
+  
+  </div>
+  </form>

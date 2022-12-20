@@ -1,0 +1,37 @@
+<form [formGroup]="confirm_password" (ngSubmit)="onsubmmit()">
+  <input
+    type="password"
+    placeholder="password"
+    formControlName="psw"
+  /><br /><br />
+  <small
+    style="color: red"
+    *ngIf="!confirm_password.get('psw')?.valid && submit"
+    >please enter password</small
+  ><br /><br />
+
+  <input
+    type="password"
+    placeholder="confirm password"
+    formControlName="cfpsw"
+  /><br /><br />
+  <small
+    style="color: red"
+    *ngIf="
+      !confirm_password.get('cfpsw')?.valid &&
+      submit &&
+      !confirm_password.get('cfpsw')?.touched
+    "
+    >please enter Conform password</small
+  ><br /><br />
+  <small
+    style="color: red"
+    *ngIf="
+      confirm_password.get('cfpsw')?.touched &&
+      confirm_password.get('cfpsw')?.value != confirm_password.get('psw')?.value
+    "
+    >password not match</small
+  ><br /><br />
+  <button type="submit">submit</button>
+</form>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, in. Culpa est fugiat corporis aperiam sapiente quam dignissimos cupiditate perspiciatis et eum. Aut iure quam autem, nesciunt laudantium nobis quaerat.</p>
